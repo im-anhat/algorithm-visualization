@@ -1,0 +1,75 @@
+{
+    "About" : [
+        {   "img" : "images/importance.png",
+            "Importance" : {
+                "Fundamentals of Computer Science" : "Understanding how to break down complex tasks (sorting large datasets) into smaller, manageable steps fosters critical thinking and problem-solving abilities",
+                "Analytical Thinking" : "Analyzing the efficiency and complexity of different sorting algorithms encourages students to think critically, compare different approaches, and choose the most suitable solution for specific situations",
+                "Algorithmic Concepts" : "Learning sorting algorithms exposes students to core algorithmic concepts like recursion, divide-and-conquer, and loop structures, laying the groundwork for understanding more complex algorithms in the future"
+            }
+        },
+        {   "img" : "images/applications.png",
+            "Applications" : {
+                "E-commerce" : "Sorting products by price, popularity, or category significantly influences customer browsing and purchasing decisions",
+                "Social media" : "Sorting feeds chronologically or by engagement keeps users informed and engaged with the most relevant content",
+                "Search engine" : "Sorting search results by relevance ensures users find the most accurate and valuable information quickly",
+                "Logistics and supply chain management" : "Sorting packages efficiently based on destination or delivery route optimizes transportation and reduces costs"
+            } 
+        },
+        {
+            "sorted" : "images/sorted.png",
+            "benefit" : "Most of the time, sorted data help people deal with data much faster (search, analyze and use)",
+            "unsorted" : "images/unsorted.png",
+            "drawbacks" : "With unsorted data, it is hard to manipulate information"
+        }
+    ],
+    "Authors" : [
+        {
+            "name" : "Nhat Le",
+            "major" : "Computer Science, Mathematics & Data Science (Triple)",
+            "classification" : "Sophomore",
+            "hobbies" : "Mathematics",
+            "email" : "lan0908@iastate.edu",
+            "img" : "images/nhat-le.jpeg"
+        },
+        {
+            "name" : "Khoi Pham",
+            "major" : "Computer Science",
+            "classification" : "Sophomore",
+            "hobbies" : "Computers",
+            "email" : "duckhoi@iastate.edu",
+            "img" : "images/khoi-pham.jpg"
+        }
+    ],
+    "Insertion" : {
+        "Best Case" : "O(N)",
+        "Worst Case" : "O(N^2)",
+        "Average Case" : "O(N^2)",
+        "Space complexity" : "O(1)",
+        "idea" : "Insertion sort involves iteratively selecting each element from an unsorted array and placing it in its correct position among the already sorted elements, resulting in a sorted array.",
+        "img" : "images/insertion-illustration.png"
+    },
+    "Selection" : {
+        "Best Case" : "O(N^2)",
+        "Worst Case" : "O(N^2)",
+        "Average Case" : "O(N^2)",
+        "Space complexity" : "O(1)",
+        "idea" : "Selection sort involves iteratively selecting the smallest (or largest) element from the unsorted portion of an array and swapping it with the element at the beginning of the unsorted portion, gradually building a sorted array.",
+        "img" : "images/selection-illustration.png"
+    },
+    "Merge" : {
+        "Best Case" : "O(N * log(N))",
+        "Worst Case" : "O(N * log(N))",
+        "Average Case" : "O(N * log(N))",
+        "Space complexity" : "O(N)",
+        "idea" : "Merge sort involves recursively dividing the array into smaller halves, sorting each half independently, and then merging the sorted halves back together to produce a fully sorted array.",
+        "img" : "images/merge-illustration.png"
+    },
+    "Quick" : {
+        "Best Case" : "O(N * log(N))",
+        "Worst Case" : "O(N^2)",
+        "Average Case" : "O(N * log(N))",
+        "Space complexity" : "O(log(N))",
+        "idea" : "Quick sort involves selecting a 'pivot' element from the array, partitioning the array into two sub-arrays based on the pivot, recursively sorting each sub-array, and then combining them to produce a fully sorted array.",
+        "img" : "images/quick-illustration.png"
+    }
+}

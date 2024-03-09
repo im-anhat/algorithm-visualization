@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+	padding-top: 75px;
+	background-image: url(../images/theme.png);
+}
+.jumbotron {
+    width: 600px; 
+	height: 384px; 
+	position: relative; 
+	margin: 0 auto; 
+}
+
+.bar { 
+	width: 28px; 
+	position: absolute; 
+	left: 0; 
+	bottom: 0; 
+	background-color: #09649f; 
+	transition: 0.2s all ease;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.bar_id { 
+	position: absolute; 
+	top: -24px; 
+	width: 100%; 
+	text-align: center; 
+} 
+
+.two-buttons {
+    margin: 25px auto;
+    width: fit-content;
+}
+
+button {
+    margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	color: white;
+	background-color: #05477a;
+	font-weight: 500;
+}
+
+.illustration {
+    height: 200px;
+	margin: 0 auto;
+}

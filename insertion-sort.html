@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/sorting.css">
+  <link rel="icon" href="images/s-symbol.png" type="image/x-icon">
+
+  
+  <!-- Font "Charm" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
+  <!-- Font "Pacifico"-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <title>Visualizations</title>
+</head>
+<body>
+  <header data-bs-theme="dark">
+      <div class="navbar navbar-dark shadow-sm">
+        <div class="container">
+          <a href="index.html" class="navbar-brand d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-bar-chart" viewBox="0 0 16 16">
+                  <path d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"/>
+              </svg>
+            <strong style="margin-left: 5px; color: white;"><strong>Visualization of Sorting Algorithms</strong></strong>
+          </a>
+          
+          <div class="navbar-nav justify-content-end d-none d-lg-block">
+              <a class="nav-item current" href="insertion-sort.html">Insertion Sort</a>
+              <a class="nav-item" href="selection-sort.html">Selection Sort</a>
+              <a class="nav-item" href="merge-sort.html">Merge Sort</a>
+              <a class="nav-item" href="quick-sort.html">Quick Sort</a>
+              <span style="border: 1px solid black;"></span>
+              <a class="nav-item" href="about.html">About Us</a>
+          </div>
+
+          <button class="navbar-toggler d-lg-none custom-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarHeader" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel"><strong>Select Algorithms</strong></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="list-group" style="margin-top: 10px;">
+            <li class="list-group-item"><a class="nav-link" href="insertion-sort.html">Insertion Sort</a></li>
+            <li class="list-group-item"><a class="nav-link" href="selection-sort.html">Selection Sort</a></li>
+            <li class="list-group-item"><a class="nav-link" href="merge-sort.html">Merge Sort</a></li>
+            <li class="list-group-item"><a class="nav-link" href="quick-sort.html">Quick Sort</a></li>
+            <li class="list-group-item"><a class="nav-link" href="about.html">Authors</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container py-4">
+        <div class="mb-4 bg-body-tertiary rounded-3">
+          <div class="container-fluid py-5">
+            <div class="pb-3 mb-4 d-flex justify-content-center align-items-center">
+              <a href="insertion-sort.html">
+                <span id="title" class="fs-4"><strong>Insertion Sort Visualizer</strong></span>
+              </a>
+            </div>
+            <div class="bars-container jumbotron">
+
+            </div>
+            <section id="ele"></section> 
+            <div class="two-buttons">
+              <button class="btn1" onclick="generate()" id="Btn1">New Random Array</button> 
+              <button class="btn2" onclick="InsertionSort(),disable()" id="Btn2">Insertion Sort</button> 
+            </div>
+          </div>
+        </div>
+    
+        <div class="row align-items-md-stretch">
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-body-tertiary border rounded-3" id="analysis">
+              <h2>Analysis of Insertion Sort</h2>
+              
+            </div>
+          </div>
+        
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-body-tertiary border rounded-3" id="illustration">
+              <h2>Illustration</h2>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <h5>Authors</h5>
+                  <ul>
+                      <li>Anh Nhat Le</li>
+                      <li>Khoi Pham</li>
+                  </ul>
+              </div>
+              <div class="col-md-6">
+                  <h5>Contact Information</h5>
+                  <ul>
+                      <li>Email: lan0908@iastate.edu (Nhat)</li>
+                      <li>Email: duckhoi@iastate.edu (Khoi)</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+
+  <!-- JS Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="sorting.js"></script>
+</body>
+</html>
